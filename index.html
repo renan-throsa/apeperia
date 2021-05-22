@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
@@ -39,7 +39,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main">
         <section class="chamada container">
             <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
             <p class="chamada__texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e
@@ -163,57 +163,61 @@
             <form class="contato__form">
 
                 <div class="contato__field">
-                    <label>Nome: </label>
-                    <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+                    <label for="nameField">Nome: </label>
+                    <input id="nameField" type="text" class="contatoCampo--validouFoi" placeholder="Digite o seu nome"
+                        required>
                 </div>
 
                 <div class="contato__field">
-                    <label>Email: </label>
-                    <input type="email" class="contatoCampo--validouErro" required>                    
+                    <label for="emailField">Email: </label>
+                    <input id="emailField" type="email" class="contatoCampo--validouErro"
+                        placeholder="Digite o seu email" required>
                 </div>
 
                 <div class="contato__field">
-                    <label>Telefone: </label>
-                    <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
-                    
+                    <label for="telefoneField">Telefone: </label>
+                    <input id="telefoneField" type="text" class="contatoCampo--validouErro"
+                        placeholder="Digite o seu número de telefone">
+
                 </div>
 
                 <div class="contato__field">
-                    <label>CEP: </label>
-                    <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+                    <label for="cepField">CEP: </label>
+                    <input id="cepField" type="text" maxlength="8" placeholder="Digite o seu CEP" required>
                 </div>
 
                 <div class="contato__field">
                     <label>Endereço: </label>
-                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+                    <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
                 </div>
 
                 <div class="contato__field">
                     <label>Bairro: </label>
-                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+                    <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
                 </div>
 
                 <div class="contato__field">
                     <label>Cidade: </label>
-                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+                    <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
                 </div>
 
                 <div class="contato__field">
                     <label>Estado: </label>
-                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+                    <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
                 </div>
 
                 <div class="contato__field">
-                    <label>Mensagem: </label>
-                    <textarea name="" cols="30" rows="10" required></textarea>
-                </div>                
+                    <label for="mensagemField">Mensagem: </label>
+                    <textarea name="mensagemField" cols="30" rows="10" placeholder="Digite a sua mensagem"
+                        required></textarea>
+                </div>
 
                 <div class="contato__field">
                     <button class="contato__botao botao" type="submit">
                         Enviar mensagem
                     </button>
                 </div>
-            </form>           
+            </form>
 
         </section>
         <section class="institucional container">
@@ -232,7 +236,9 @@
                         </article>
                     </address>
                 </div>
-                <video src="img/formacao-java.mp4" class="institucional__video" controls></video>
+                <video src="img/formacao-java.mp4" class="institucional__video" controls>
+                    <track src="./subtitles.vtt" kind="subtitles" srclang="pt-br" label="Português(Brasil)">
+                </video>
             </div>
 
         </section>

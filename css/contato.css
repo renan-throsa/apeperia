@@ -37,13 +37,13 @@
 .contato__field label,
 .contato__field input,
 .contato__field textarea {
-    width     : 100%;
-    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
+
 .contato__field label {
-    margin-bottom: 5px;
-    margin-left  : 8px;
+    margin-left: 8px;
 }
 
 .contato__field input,
@@ -64,8 +64,8 @@
 
 
 .contato__botao {
-    margin: 0 auto;
-    background: transparent;    
+    margin    : 0 auto;
+    background: transparent;
     color     : #B72E2E;
     border    : 1px solid #B72E2E;
     margin-top: 1rem;
