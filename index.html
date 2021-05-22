@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -48,22 +48,29 @@
         </section>
         <section class="destaques container">
             <h2 class="destaques__titulo">Destaques</h2>
-            <a href="#">
-                <figure class="destaques__painel">
-                    <img src="img/comecando-criar-logotipo.png" alt="Painel do post sobre criação de logotipo"
-                        class="destaques__painel-imagem">
-                    <figcaption class="destaques__painel-texto">Conheça as primeiras etapas para a criação de um
-                        logotipo</figcaption>
-                </figure>
-            </a>
-            <a href="#">
-                <figure class="destaques__painel">
-                    <img src="img/dicas-fotografia.png" alt="Painel do post sobre fotografia com celular"
-                        class="destaques__painel-imagem">
-                    <figcaption class="destaques__painel-texto">Veja dicas de como fotografar usando seu celular
-                    </figcaption>
-                </figure>
-            </a><a href="" class="destaques__botao botao">Receber destaques por email</a>
+
+            <div class="destaques__links">
+                <a href="#" class="secaoDestaques-link">
+                    <figure class="destaques__painel">
+                        <img src="img/comecando-criar-logotipo.png" alt="Um conjunto de vários objetos 
+                        como lápis, caderno, óculos e um computador móvel em cima de uma mesa."
+                            class="destaques__painel-imagem">
+                        <figcaption class="destaques__painel-texto">Conheça as primeiras etapas para a criação de um
+                            logotipo</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" class="secaoDestaques-link">
+                    <figure class="destaques__painel">
+                        <img src="img/dicas-fotografia.png" alt="Uma mulher com cachecol mostrando a tela de uma câmera
+                        para um rapaz ao lado dela." class="destaques__painel-imagem">
+                        <figcaption class="destaques__painel-texto">Veja dicas de como fotografar usando seu celular
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <a href="" class="destaques__botao botao">Receber destaques por email</a>
+
         </section>
         <section class="diferenciais container">
             <ul class="diferenciais__lista">
@@ -105,17 +112,19 @@
                 </ul>
                 <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p>
             </div>
-            <img src="img/sobre-apeperia.png" alt="Sobre a Apeperia" class="sobre__imagem">
+            <img src="img/sobre-apeperia.png"
+                alt="Dois homens concentrados idealizando um projeto novo em frente de um quadro branco"
+                class="sobre__imagem">
         </section>
         <section class="planos container">
             <h2 class="planos__titulo">Planos</h2>
             <ul class="planos__cartoes">
                 <li class="cartao cartao--start">
-                    <h3 class="cartao__titulo">Start</h3>
+                    <h3 class="cartao__titulo" lang="en-US">Start</h3>
                     <article class="cartao__conteudo">
                         <p class="cartao__preco"><em>R$ 500</em></p>
                         <p class="cartao__texto">5 manutenções mensais</p>
-                        <p class="cartao__texto">App SEO</p>
+                        <p class="cartao__texto" lang="en-US">App SEO</p>
                         <p class="cartao__texto">1 sistema operacional</p>
                         <a href="" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
                     </article>
@@ -125,7 +134,7 @@
                     <article class="cartao__conteudo">
                         <p class="cartao__preco"><em>R$ 1500</em></p>
                         <p class="cartao__texto">20 manutenções mensais</p>
-                        <p class="cartao__texto">App SEO</p>
+                        <p class="cartao__texto" lang="en-US">App SEO</p>
                         <p class="cartao__texto">4 sistemas operacionais</p>
                         <p class="cartao__texto">24h de atendimento</p>
                         <a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
@@ -136,7 +145,7 @@
                     <p class="cartao__preco"><em>R$ 1000</em></p>
                     <article class="cartao__conteudo">
                         <p class="cartao__texto">10 manutenções mensais</p>
-                        <p class="cartao__texto">App SEO</p>
+                        <p class="cartao__texto" lang="en-US">App SEO</p>
                         <p class="cartao__texto">2 sistemas operacionais</p>
                         <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
                     </article>
@@ -145,8 +154,67 @@
         </section>
         <section id="contato-section" class="contato container">
             <h2 class="contato__titulo">Contato</h2>
-            <p>Entre em contato com a gente</p>
-            <a href="" class="contato__botao botao">Entre em contato</a>
+
+            <p class="contato__form__legend">
+                Oi, tudo bem? Fale com a gente!
+                Preencha seus dados e sua mensagem:
+            </p>
+
+            <form class="contato__form">
+
+                <div class="contato__field">
+                    <label>Nome: </label>
+                    <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+                </div>
+
+                <div class="contato__field">
+                    <label>Email: </label>
+                    <input type="email" class="contatoCampo--validouErro" required>                    
+                </div>
+
+                <div class="contato__field">
+                    <label>Telefone: </label>
+                    <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+                    
+                </div>
+
+                <div class="contato__field">
+                    <label>CEP: </label>
+                    <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+                </div>
+
+                <div class="contato__field">
+                    <label>Endereço: </label>
+                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+                </div>
+
+                <div class="contato__field">
+                    <label>Bairro: </label>
+                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+                </div>
+
+                <div class="contato__field">
+                    <label>Cidade: </label>
+                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+                </div>
+
+                <div class="contato__field">
+                    <label>Estado: </label>
+                    <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+                </div>
+
+                <div class="contato__field">
+                    <label>Mensagem: </label>
+                    <textarea name="" cols="30" rows="10" required></textarea>
+                </div>                
+
+                <div class="contato__field">
+                    <button class="contato__botao botao" type="submit">
+                        Enviar mensagem
+                    </button>
+                </div>
+            </form>           
+
         </section>
         <section class="institucional container">
             <h2 class="institucional__titulo">Institucional</h2>

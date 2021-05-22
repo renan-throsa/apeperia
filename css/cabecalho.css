@@ -45,6 +45,5 @@
     .cabecalho__navegacao {
         display       : flex;
         flex-direction: column;
-
     }
 }

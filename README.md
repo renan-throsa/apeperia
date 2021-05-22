@@ -1,2 +1,6 @@
 # Apeperia
-Pagina principal de uma loja de aplicativos.
+Página principal de uma loja de aplicativos.
+
+## Características
+* Responsivo
+* Inclusivo
